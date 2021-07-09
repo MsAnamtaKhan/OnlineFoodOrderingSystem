@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59E63717-2FC6-4C8C-AB32-4E1DD22F98E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT_DBMS</RootNamespace>
+    <AssemblyName>PROJECT DBMS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD-DELIVERYMEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD-DELIVERYMEN.Designer.cs">
+      <DependentUpon>ADD-DELIVERYMEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD-ITEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD-ITEM.Designer.cs">
+      <DependentUpon>ADD-ITEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN-LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN-LOGIN.Designer.cs">
+      <DependentUpon>ADMIN-LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Designer.cs">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_CUSTOMERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN_CUSTOMERS.Designer.cs">
+      <DependentUpon>ADMIN_CUSTOMERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_DELIVER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN_DELIVER.Designer.cs">
+      <DependentUpon>ADMIN_DELIVER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONFIRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONFIRM.Designer.cs">
+      <DependentUpon>CONFIRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOME-SIGNUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOME-SIGNUP.Designer.cs">
+      <DependentUpon>CUSTOME-SIGNUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMER.Designer.cs">
+      <DependentUpon>CUSTOMER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUS_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUS_LOGIN.Designer.cs">
+      <DependentUpon>CUS_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE-DELIVER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE-DELIVER.Designer.cs">
+      <DependentUpon>DELETE-DELIVER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE-ITEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE-ITEM.Designer.cs">
+      <DependentUpon>DELETE-ITEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELIVER-CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELIVER-CUSTOMER.Designer.cs">
+      <DependentUpon>DELIVER-CUSTOMER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELIVERY-DETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELIVERY-DETAILS.Designer.cs">
+      <DependentUpon>DELIVERY-DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELIVERYMEN-LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELIVERYMEN-LOGIN.Designer.cs">
+      <DependentUpon>DELIVERYMEN-LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELIVERYMEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELIVERYMEN.Designer.cs">
+      <DependentUpon>DELIVERYMEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELIVERYMEN_SIGNUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELIVERYMEN_SIGNUP.Designer.cs">
+      <DependentUpon>DELIVERYMEN_SIGNUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDIT_DETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDIT_DETAILS.Designer.cs">
+      <DependentUpon>EDIT_DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODIFY-DELIVER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODIFY-DELIVER.Designer.cs">
+      <DependentUpon>MODIFY-DELIVER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODIFY-ITEMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODIFY-ITEMS.Designer.cs">
+      <DependentUpon>MODIFY-ITEMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORDERScs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORDERScs.Designer.cs">
+      <DependentUpon>ORDERScs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORDER_ALL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORDER_ALL.Designer.cs">
+      <DependentUpon>ORDER_ALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PROJECTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECTDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECTDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECTDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sample.Designer.cs">
+      <DependentUpon>sample.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD-DELIVERYMEN.resx">
+      <DependentUpon>ADD-DELIVERYMEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD-ITEM.resx">
+      <DependentUpon>ADD-ITEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN-LOGIN.resx">
+      <DependentUpon>ADMIN-LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN_CUSTOMERS.resx">
+      <DependentUpon>ADMIN_CUSTOMERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN_DELIVER.resx">
+      <DependentUpon>ADMIN_DELIVER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONFIRM.resx">
+      <DependentUpon>CONFIRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOME-SIGNUP.resx">
+      <DependentUpon>CUSTOME-SIGNUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMER.resx">
+      <DependentUpon>CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUS_LOGIN.resx">
+      <DependentUpon>CUS_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE-DELIVER.resx">
+      <DependentUpon>DELETE-DELIVER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE-ITEM.resx">
+      <DependentUpon>DELETE-ITEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELIVER-CUSTOMER.resx">
+      <DependentUpon>DELIVER-CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELIVERY-DETAILS.resx">
+      <DependentUpon>DELIVERY-DETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELIVERYMEN-LOGIN.resx">
+      <DependentUpon>DELIVERYMEN-LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELIVERYMEN.resx">
+      <DependentUpon>DELIVERYMEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELIVERYMEN_SIGNUP.resx">
+      <DependentUpon>DELIVERYMEN_SIGNUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDIT_DETAILS.resx">
+      <DependentUpon>EDIT_DETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODIFY-DELIVER.resx">
+      <DependentUpon>MODIFY-DELIVER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODIFY-ITEMS.resx">
+      <DependentUpon>MODIFY-ITEMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORDERScs.resx">
+      <DependentUpon>ORDERScs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORDER_ALL.resx">
+      <DependentUpon>ORDER_ALL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sample.resx">
+      <DependentUpon>sample.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PROJECTDataSet.xsc">
+      <DependentUpon>PROJECTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECTDataSet.xss">
+      <DependentUpon>PROJECTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECTDataSet1.xsc">
+      <DependentUpon>PROJECTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECTDataSet1.xss">
+      <DependentUpon>PROJECTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECTDataSet2.xsc">
+      <DependentUpon>PROJECTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECTDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECTDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECTDataSet2.xss">
+      <DependentUpon>PROJECTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
